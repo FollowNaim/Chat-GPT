@@ -168,4 +168,7 @@ header{
  .chat-input span{
   margin-right: 2%;
  }
+ .showInfo{
+  right: 40%;
+ }
 }
