@@ -9,6 +9,8 @@ const body = document.querySelector("body");
 const sendtxt = document.querySelector("#sendtxt");
 const chatInputHeight = chatInput.scrollHeight;
 const showInfo = document.querySelector(".showInfo")
+const API_KEY = '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';
+const API_URL = 'https://api.openai.com/v1/chat/completions';
 
 
 let userMassage;
@@ -58,6 +60,7 @@ const handleChat = ()=>{
  userMassage = chatInput.value.trim();
  if(!userMassage) return;
  chatbox.appendChild(createChatLi(userMassage,"outgoing"));
+ chatInput.value = '';
  chatbox.scrollTo(0,chatbox.scrollHeight);
  
  setTimeout(()=>{
@@ -85,6 +88,7 @@ chatInput.addEventListener("input",()=>{
  chatInput.style.height = `${chatInputHeight}px`;
  chatInput.style.height = `${chatInput.scrollHeight}px`;
 })
+
 
 
 sendBtn.addEventListener("click",handleChat)
