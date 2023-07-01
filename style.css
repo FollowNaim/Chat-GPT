@@ -65,7 +65,7 @@ header{
  
 }
 .chatbox {
- max-height: 400px;
+ max-height: 70%;
  /* Adjust the maximum height as per your requirement */
  overflow: auto;
 }
