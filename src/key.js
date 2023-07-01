@@ -1,2 +1,1 @@
-const API_KEY = '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';
-const API_URL = 'https://api.openai.com/v1/chat/completions';
+const api_key = "U Need Api key? Go Back kid. there is nothing"
